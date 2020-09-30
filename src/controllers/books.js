@@ -15,8 +15,14 @@ exports.list = async (req, res, next) => {
 exports.listList = async (req, res, next) => {
   try {
     const response = await Service.listList()
+    const lists = response.data.results
 
-    res.json(response.data.results)
+    for (const list of lists) {
+      // Extracts id
+      list.id = list.list_name_encoded
+    }
+
+    res.json(lists)
   } catch (error) {
     next(error)
   }
