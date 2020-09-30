@@ -1,0 +1,31 @@
+{
+  "name": "nytimes-articles-and-books",
+  "version": "0.0.1",
+  "description": "New York Times articles & books",
+  "author": "Ndaru Andrianto <me@ndaru.id>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "nodemon src/",
+    "start": "node src/"
+  },
+  "dependencies": {
+    "axios": "^0.20.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-joi-validation": "^4.0.4-beta.0",
+    "joi": "^17.2.1",
+    "lodash": "^4.17.20"
+  },
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.1.0"
+  }
+}

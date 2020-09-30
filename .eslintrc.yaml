@@ -1,0 +1,17 @@
+env:
+  node: true
+
+extends:
+  - eslint:recommended
+  - standard
+  - plugin:prettier/recommended
+
+rules:
+  no-var: warn
+  no-extra-parens: warn
+  linebreak-style: [error, unix]
+  padding-line-between-statements:
+    - warn
+    - blankLine: always
+      prev: '*'
+      next: return
